@@ -8,9 +8,58 @@ image1.addEventListener('click', () => {
 })
 
 image2.addEventListener('click', () => {
-    image2.style.display = 'none';
-    titulo.style.display = 'block';
+    image2.style.display = 'none'; 
+    image1.style.display = 'block'; 
 })
+
+
+/*NAV MENU TOGGLE*/ 
+const openMenuButton = document.querySelector('.menu-btn');
+const navMenuContainer = document.querySelector('.menu-container');
+const closeMenuButton = document.querySelector('.close-btn');
+
+openMenuButton.addEventListener('click', () => {
+    navMenuContainer.style.display = 'block';
+})
+
+closeMenuButton.addEventListener('click', () => {
+    navMenuContainer.style.display = 'none';
+})
+
+
+const aboutButton = document.querySelector('.about-btn');
+const aboutText = document.querySelector('.about-text');
+aboutText.style.display = 'none';
+
+aboutButton.addEventListener('click', () => {
+    if(aboutText.style.display == 'none') {
+        aboutText.style.display = 'flex';
+    }else {
+        aboutText.style.display = 'none';
+    }
+
+})
+
+
+
+
+
+
+
+/*MODAL CODE*/
+
+/*const openModal = document.querySelector("[data-open-modal]");
+  const closeModal = document.querySelector("[data-close-modal]");
+  const aboutDialog = document.querySelector("[data-modal]");
+
+  openModal.addEventListener("click", () => {
+    aboutDialog.showModal()
+  } )
+  closeModal.addEventListener("click", () => {
+    aboutDialog.close()
+  } )
+*/
+
 
 
 
