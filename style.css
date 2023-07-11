@@ -68,6 +68,11 @@
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.6em;
+    
+}
+
+.about-btn {
+    cursor: pointer;
 }
 
 .text-paragraph {
@@ -112,4 +117,16 @@
         width: 300px;
     }
 
+  }
+
+  .voltar-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em;
+    text-align: ;
+  }
+
+  .voltar-btn a img {
+    width: 30px;
   }
